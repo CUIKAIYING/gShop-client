@@ -7,4 +7,10 @@ export default {
   address: {}, // 地址信息对象
   categorys: [], // 分类数组
   shops: [], //商家数组
+  goods:[],  //商品列表
+  ratings:[],  //评价
+  info:{}, //商家信息
+  user:{},
+  cartFoods:[],  //购物车列表
+
 }

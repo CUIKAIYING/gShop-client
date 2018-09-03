@@ -7,6 +7,7 @@
 </template>
 
 <script>
+  import axios from "axios"
   import FooterGuide from "./components/FooterGuide/FooterGuide.vue"
 //  import {reqAddress} from './api'
   export default {
@@ -18,6 +19,20 @@
     mounted(){
 //      分发action发ajax请求获取address数据
       this.$store.dispatch("getAddress")
+      //      分发action发ajax请求获取categorys数据
+      this.$store.dispatch("getCategorys")
+      //      分发action发ajax请求获取shops数据
+      this.$store.dispatch("getShops")
+      //      分发action发ajax请求获取user数据
+      this.$store.dispatch("getUser")
+
+//    模拟发送ajax请求
+//      axios.get('/goods')
+//        .then(response =>{
+//          console.log(response.data)
+//        })
+
+
     },
 
     components:{
